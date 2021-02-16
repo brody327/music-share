@@ -2,33 +2,19 @@
 //~~~ IMPORTS ~~~
 //~~~~~~~~~~~~~~~
 import React from 'react';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link,
-	Redirect,
-} from 'react-router-dom';
-
-//--- Components ---
-import { HomePage, CreateRoomPage, RoomJoinPage } from './index';
 
 //~~~~~~~~~~~~~~~~~
 //~~~ COMPONENT ~~~
 //~~~~~~~~~~~~~~~~~
-const App = () => {
+const CreateJoinPage = () => {
 	//--- State ---
 	//--- Effects ---
 	//--- Functions ---
 	//--- JSX ---
-	return (
-		<div>
-			<HomePage />
-		</div>
-	);
+	return <h1>Create Room Page</h1>;
 };
 
 //~~~~~~~~~~~~~~~
 //~~~ EXPORTS ~~~
 //~~~~~~~~~~~~~~~
-export default App;
+export default CreateJoinPage;

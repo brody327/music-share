@@ -10,25 +10,31 @@ import {
 	Redirect,
 } from 'react-router-dom';
 
-//--- Components ---
-import { HomePage, CreateRoomPage, RoomJoinPage } from './index';
+// --- Components ---
+import { CreateRoomPage, RoomJoinPage } from './index';
 
 //~~~~~~~~~~~~~~~~~
 //~~~ COMPONENT ~~~
 //~~~~~~~~~~~~~~~~~
-const App = () => {
+const HomePage = () => {
 	//--- State ---
 	//--- Effects ---
 	//--- Functions ---
 	//--- JSX ---
 	return (
-		<div>
-			<HomePage />
-		</div>
+		<Router>
+			<Switch>
+				<Route exact path='/'>
+					<p>this is the homepage</p>
+				</Route>
+				<Route path='/join' component={RoomJoinPage}></Route>
+				<Route path='/create' component={CreateRoomPage}></Route>
+			</Switch>
+		</Router>
 	);
 };
 
 //~~~~~~~~~~~~~~~
 //~~~ EXPORTS ~~~
 //~~~~~~~~~~~~~~~
-export default App;
+export default HomePage;
