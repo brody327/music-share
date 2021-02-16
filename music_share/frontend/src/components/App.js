@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+//~~~~~~~~~~~~~~~
+//~~~ IMPORTS ~~~
+//~~~~~~~~~~~~~~~
+import React from 'react';
 
-export default class App extends Component {
-	constructor(props) {
-		super(props);
-	}
+//~~~~~~~~~~~~~~~~~
+//~~~ COMPONENT ~~~
+//~~~~~~~~~~~~~~~~~
+const App = () => {
+	//--- State ---
+	//--- Effects ---
+	//--- Functions ---
+	//--- JSX ---
+	return <h1>Hello World</h1>;
+};
 
-	render() {
-		return <h1>Testing React Code</h1>;
-	}
-}
-
-const appDiv = document.getElementById('app');
-render(<App />, appDiv);
+//~~~~~~~~~~~~~~~
+//~~~ EXPORTS ~~~
+//~~~~~~~~~~~~~~~
+export default App;
