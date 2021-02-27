@@ -26,7 +26,7 @@ SECRET_KEY = '+i#o7ly!01%)v!ghk9j9tlfyzhhn$lfg0xn&cv0%*e24@$90@+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["brody-music-share.herokuapp.com"]
 
 
 # Application definition
