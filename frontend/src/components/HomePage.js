@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 // --- Components ---
-import { CreateRoomPage, RoomJoinPage } from './index';
+import { CreateRoomPage, RoomJoinPage, Room } from './index';
 
 //~~~~~~~~~~~~~~~~~
 //~~~ COMPONENT ~~~
@@ -29,6 +29,7 @@ const HomePage = () => {
 				</Route>
 				<Route path='/join' component={RoomJoinPage}></Route>
 				<Route path='/create' component={CreateRoomPage}></Route>
+				<Route path='/room/:roomCode' component={Room}></Route>
 			</Switch>
 		</Router>
 	);

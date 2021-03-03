@@ -19,7 +19,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 //~~~~~~~~~~~~~~~~~
 //~~~ COMPONENT ~~~
 //~~~~~~~~~~~~~~~~~
-const CreateRoomPage = () => {
+const CreateRoomPage = (props) => {
 	const [votesToSkip, setVotesToSkip] = useState(2);
 	const [guestCanPause, setGuestCanPause] = useState(true);
 
@@ -46,7 +46,7 @@ const CreateRoomPage = () => {
 
 		fetch('/api/create-room', requestOptions)
 			.then((response) => response.json())
-			.then((data) => console.log(data));
+			.then((data) => props.history.push('/room/' + data.code));
 	};
 	//--- JSX ---
 	return (
