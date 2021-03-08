@@ -13,6 +13,8 @@ import {
 //--- Components ---
 import { HomePage, CreateRoomPage, RoomJoinPage } from './index';
 
+//--- CSS ---
+
 //~~~~~~~~~~~~~~~~~
 //~~~ COMPONENT ~~~
 //~~~~~~~~~~~~~~~~~
@@ -22,7 +24,7 @@ const App = () => {
 	//--- Functions ---
 	//--- JSX ---
 	return (
-		<div>
+		<div className='center'>
 			<HomePage />
 		</div>
 	);
